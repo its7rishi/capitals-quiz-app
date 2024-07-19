@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+@layer components {
+  .box-sm {
+    @apply w-[98%] h-[350px] bg-white rounded-md shadow-xl p-4 flex flex-col items-center justify-center gap-6;
+  }
+  .box-lg {
+    @apply w-[50%] h-[400px] bg-white rounded-md shadow-xl p-4 flex flex-col items-center justify-center gap-10;
+  }
+  .q-box-sm {
+    @apply w-[98%] h-auto min-h-[450px] bg-white rounded-md shadow-xl p-4 flex flex-col items-center justify-center gap-4;
+  }
+  .q-box-md {
+    @apply w-[50%] h-auto bg-white rounded-md shadow-xl p-4 flex flex-col items-center justify-center gap-6;
+  }
+  .heading-big {
+    @apply text-slate-800 text-3xl text-center font-bold;
+  }
+  .heading-small {
+    @apply text-slate-800 text-xl text-center font-bold;
+  }
+  .h2-big {
+    @apply text-xl text-center text-slate-800 font-semibold;
+  }
+  .h2-small {
+    @apply text-lg text-center text-slate-800 font-semibold;
+  }
+  .p-big {
+    @apply text-slate-800 text-lg text-center;
+  }
+  .p-big {
+    @apply text-slate-800 text-sm text-center;
+  }
+  .submit-btn-lg {
+    @apply p-2 bg-slate-800 text-white rounded-md hover:bg-white hover:text-slate-800 hover:border hover:border-slate-800 transition-all duration-300 active:scale-95;
+  }
+  .input-lg {
+    @apply p-2 border-b-2 border-b-slate-500 outline-none;
+  }
+  .input-sm {
+    @apply p-2 border-b-2 border-b-slate-500 outline-none text-sm;
+  }
+  .submit-btn-sm {
+    @apply p-2 bg-slate-800 text-white text-xs rounded-sm hover:bg-white hover:text-slate-800 hover:border hover:border-slate-800 transition-all duration-300 active:scale-95;
+  }
+  .option-btn {
+    @apply text-sm md:text-lg text-white py-2 px-4 w-[200px] rounded-lg hover:scale-105 transition-all duration-300;
+  }
+  .next-btn {
+    @apply float-right text-sm md:text-lg bg-blue-800 text-white py-2 px-4 rounded-lg hover:bg-transparent hover:border hover:border-blue-800 hover:text-slate-800 transition-all duration-300;
+  }
+}
